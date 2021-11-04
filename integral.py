@@ -26,6 +26,7 @@ integration=0
 pi=math.pi
 cos=math.cos
 sin=math.sin
+tan=math.tan
 
 # f(x)=((cos((kl/2)*cos(x)) - cos(kl/2))**2)/sin(x)
 # for the case of a half wavelength dipole kl/2 = pi/2

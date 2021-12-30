@@ -29,15 +29,10 @@ print("\n")
 print("3.- Enter the lower limit of integration when prompted")
 print("\n")
 
-# input values
-upper_limit= input('Upper limit of integration value? (e.g. 3.14159 for pi) ')
-lower_limit= input('Lower limit of integration value? (e.g. 0.00001 for zero) ')
-n=input('number of subintervals? (e.g. 10 or 1000 or 1000000) ')
-
-#casting input strings as floats
-lower_limit=float(lower_limit)
-upper_limit=float(upper_limit)
-n=float(n)
+#input values
+upper_limit=float(input('Upper limit of integration value? (e.g. 3.14159 for pi) '))
+lower_limit=float(input('Lower limit of integration value? (e.g. 0.00001 for zero) '))
+n=int(input('number of subintervals? (e.g. 10 or 1000 or 1000000) '))
 
 #initializing variable
 integration=0
@@ -61,13 +56,12 @@ f_upper_limit=((cos((pi/2)*cos(upper_limit)) - cos(pi/2))**2)/sin(upper_limit)
 step_size=(upper_limit-lower_limit)/n
 integration_value=f_lower_limit +f_upper_limit
 
-n=int(n) #casting n to integer so as to use it in the for loop
 for i in range(1,n,1):
 	k=lower_limit + i*step_size
 	f_k=((cos((pi/2)*cos(k)) - cos(pi/2))**2)/sin(k)
 	integration = integration + 2*f_k
 	#print(k, f_k, integration,f_upper_limit,f_lower_limit) # used for debugging
 	
+	
 integration = (integration + f_lower_limit + f_upper_limit) *step_size/2
 print("The definite integral's value is: ",integration)
-		

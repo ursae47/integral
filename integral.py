@@ -67,7 +67,6 @@ for i in range(1,n,1):
 	f_k=((cos((pi/2)*cos(k)) - cos(pi/2))**2)/sin(k)
 	integration = integration + 2*f_k
 	#print(k, f_k, integration,f_upper_limit,f_lower_limit) # used for debugging
-	i=i+1
 	
 integration = (integration + f_lower_limit + f_upper_limit) *step_size/2
 print("The definite integral's value is: ",integration)

@@ -64,4 +64,4 @@ for i in range(1,n,1):
 	
 	
 integration = (integration + f_lower_limit + f_upper_limit) *step_size/2
-print("The definite integral's value is: ",integration)
+print("The definite integral's value is: ", integration)

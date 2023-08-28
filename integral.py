@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+##############################################################################
+#
+#                        Program name: integral.py
+#                        Created:      Dec 13, 2022 12:00
+#                        author:       Stephen Flowers Chávez
+#
+##############################################################################
 import math
 import os
 

@@ -3,6 +3,7 @@
 #
 #                        Program name: integral.py
 #                        Created:      Dec 13, 2022 12:00
+#                        Modified:     Dec 25, 2025 11:03
 #                        author:       Stephen Flowers Chávez
 #
 ##############################################################################
@@ -28,18 +29,18 @@ print("*                                  |   v                      *")
 print("*                                                             *")
 print("***************************************************************")
 print("\n")
-print("Enter your definite integral as follows")
-print("1.- Modify the source code to define your function f(x)")
+print("Escriba su integral definitiva de la siguiente manera")
+print("1.- Modifique el codigo fuente para definir su funcion f(x)")
 print("\n")
-print("2.- Enter the upper limit of integration when prompted")
+print("2.- Escriba el limite de integracion superior cuando se le pida")
 print("\n")
-print("3.- Enter the lower limit of integration when prompted")
+print("3.- Escriba el limite de integracion inferior cuando se le pida")
 print("\n")
 
 #input values
-upper_limit=float(input('Upper limit of integration value? (e.g. 3.14159 for pi) '))
-lower_limit=float(input('Lower limit of integration value? (e.g. 0.00001 for zero) '))
-n=int(input('number of subintervals? (e.g. 10 or 1000 or 1000000) '))
+upper_limit=float(input('Valor de frontera superior para la integracion? (e.g. 3.14159 for pi) '))
+lower_limit=float(input('Valor de frontera inferior para la integracion? (e.g. 0.00001 for zero) '))
+n=int(input('numero de subintervalos? (e.g. 10 or 1000 or 1000000) '))
 
 #initializing variable
 integration=0
@@ -71,4 +72,4 @@ for i in range(1,n,1):
 	
 	
 integration = (integration + f_lower_limit + f_upper_limit) *step_size/2
-print("The definite integral's value is: ", integration)
+print("El valor de la integral definitiva es: ", integration)
